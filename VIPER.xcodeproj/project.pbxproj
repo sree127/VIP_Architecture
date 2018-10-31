@@ -11,6 +11,11 @@
 		9E2B76372188A1F1006D12ED /* PersonListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B76362188A1F1006D12ED /* PersonListProtocols.swift */; };
 		9E2B763A2188A661006D12ED /* RowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B76392188A661006D12ED /* RowViewModel.swift */; };
 		9E2B763C2188A6D7006D12ED /* ValueObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B763B2188A6D7006D12ED /* ValueObservable.swift */; };
+		9E2B763E2188A90E006D12ED /* PersonListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B763D2188A90E006D12ED /* PersonListInteractor.swift */; };
+		9E2B76402188A9A4006D12ED /* PersonListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B763F2188A9A4006D12ED /* PersonListPresenter.swift */; };
+		9E2B76422188AAB2006D12ED /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B76412188AAB2006D12ED /* Person.swift */; };
+		9E2B76442188AAF8006D12ED /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B76432188AAF8006D12ED /* Address.swift */; };
+		9E2B76462188B148006D12ED /* AddressWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B76452188B148006D12ED /* AddressWorker.swift */; };
 		9ED61105218896ED00CAE2C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED61104218896ED00CAE2C2 /* AppDelegate.swift */; };
 		9ED61107218896ED00CAE2C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED61106218896ED00CAE2C2 /* ViewController.swift */; };
 		9ED6110A218896ED00CAE2C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED61108218896ED00CAE2C2 /* Main.storyboard */; };
@@ -34,6 +39,11 @@
 		9E2B76362188A1F1006D12ED /* PersonListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListProtocols.swift; sourceTree = "<group>"; };
 		9E2B76392188A661006D12ED /* RowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewModel.swift; sourceTree = "<group>"; };
 		9E2B763B2188A6D7006D12ED /* ValueObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueObservable.swift; sourceTree = "<group>"; };
+		9E2B763D2188A90E006D12ED /* PersonListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListInteractor.swift; sourceTree = "<group>"; };
+		9E2B763F2188A9A4006D12ED /* PersonListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListPresenter.swift; sourceTree = "<group>"; };
+		9E2B76412188AAB2006D12ED /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9E2B76432188AAF8006D12ED /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		9E2B76452188B148006D12ED /* AddressWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressWorker.swift; sourceTree = "<group>"; };
 		9ED61101218896ED00CAE2C2 /* VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED61104218896ED00CAE2C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ED61106218896ED00CAE2C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				9E2B76322188A191006D12ED /* PersonWorker.swift */,
+				9E2B76452188B148006D12ED /* AddressWorker.swift */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -76,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				9E2B76392188A661006D12ED /* RowViewModel.swift */,
+				9E2B76412188AAB2006D12ED /* Person.swift */,
+				9E2B76432188AAF8006D12ED /* Address.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,6 +122,7 @@
 		9ED61103218896ED00CAE2C2 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				9E2B763B2188A6D7006D12ED /* ValueObservable.swift */,
 				9ED611242188974300CAE2C2 /* PersonList */,
 				9ED61104218896ED00CAE2C2 /* AppDelegate.swift */,
 				9ED61106218896ED00CAE2C2 /* ViewController.swift */,
@@ -116,7 +130,6 @@
 				9ED6110B218896EE00CAE2C2 /* Assets.xcassets */,
 				9ED6110D218896EF00CAE2C2 /* LaunchScreen.storyboard */,
 				9ED61110218896EF00CAE2C2 /* Info.plist */,
-				9E2B763B2188A6D7006D12ED /* ValueObservable.swift */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
@@ -146,6 +159,7 @@
 		9ED611252188974D00CAE2C2 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				9E2B763F2188A9A4006D12ED /* PersonListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -153,6 +167,7 @@
 		9ED611262188975900CAE2C2 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				9E2B763D2188A90E006D12ED /* PersonListInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -269,8 +284,13 @@
 				9ED61107218896ED00CAE2C2 /* ViewController.swift in Sources */,
 				9E2B763C2188A6D7006D12ED /* ValueObservable.swift in Sources */,
 				9ED61105218896ED00CAE2C2 /* AppDelegate.swift in Sources */,
+				9E2B76462188B148006D12ED /* AddressWorker.swift in Sources */,
+				9E2B76442188AAF8006D12ED /* Address.swift in Sources */,
+				9E2B763E2188A90E006D12ED /* PersonListInteractor.swift in Sources */,
 				9E2B763A2188A661006D12ED /* RowViewModel.swift in Sources */,
 				9E2B76332188A191006D12ED /* PersonWorker.swift in Sources */,
+				9E2B76422188AAB2006D12ED /* Person.swift in Sources */,
+				9E2B76402188A9A4006D12ED /* PersonListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

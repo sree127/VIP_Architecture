@@ -1,5 +1,5 @@
 //
-//  PersonWorker.swift
+//  AddressWorker.swift
 //  VIPER
 //
 //  Created by Sreejith Njamelil on 30.10.18.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-class PersonWorker {
+class AddressWorker {
   
-  func getPersonList(callback: @escaping ([Person]) -> Void) {
-    callback([Person(name: "some")])
+  func getAddress(callback: @escaping ([Address]) -> Void) {
+    callback([Address(address: "street")])
   }
 }
