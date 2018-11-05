@@ -10,3 +10,6 @@ import Foundation
 
 protocol RowModelProtocol {}
 
+protocol VIP {
+  
+}
