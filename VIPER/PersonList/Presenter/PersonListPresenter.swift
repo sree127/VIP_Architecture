@@ -12,11 +12,4 @@ class PersonListPresenter {
   
   var rowValueObservable = ValueObservable<[RowViewModel]>(value: [])
   
-  func peopleListDidFetch(list: [Person]) {
-    
-  }
-  
-  func addressDidFetch(address: Address) {
-    
-  }
 }
